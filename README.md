@@ -24,8 +24,8 @@ Die eigentliche Clientsoftware kiwi2Radio.py kann unterschiedlich aufgerufen wer
 
 `./kiwi2Radio.py  --kiwiserver Serveradresse --kiwiport Port_des_KiwiSDR`
 
-Änderungen an der Schnittstelle für die Zuführung der Messergebnisse des Lokalsozillator werden durch die Parameter --serialdev=PORT und --serialbitrate=RATE gemacht.
-Informationen zu weiteren Parameter erfährt man mit dem Aufruf von `./kiwi2Radio.py --help`
+Änderungen an der Schnittstelle für die Zuführung der Messergebnisse des Lokalsozillator werden durch die Parameter --serialdev=PORT und --serialbitrate=RATE erreicht.
+Informationen zu weiteren Parametern erhält man mit dem Aufruf von `./kiwi2Radio.py --help`
 
 
 Nach dem Start sieht man die Benutzeroberfläche des Empfängers. 
