@@ -3,9 +3,9 @@
 
 kiwi2Radio ist ein in Python geschriebener experimenteller HF-Mapper und KiwiSDR-Abstimmprogramm für alte Radios. Das Prinzip ist eine plattformunabhängige Abwandlung der inet2RF - Funktion aus den Projekten iRadio/iRadioMini und iRadioAndroid. https://github.com/BM45/iRadioAndroid#aussendung-des-internetradioprogramms-an-alte-radios
 
-Durch die Rückführung des Ausgabesignals eines irgendwo auf der Welt stehenden KiwiSDR - entsprechend der eingestellten Frequenz eines lokalen Radios - entsteht der Eindruck, als würde man mit dem heimischen Empfänger durch die Radiobänder entfernter Länder kurbeln. Die Rückführung des Signals kann dabei in NF-, ZF- oder HF-Lage für das lokale Radio erfolgen, je nach verwendeter Technik. Zur Erfassung der Lokaloszillatorfrequenz des Radios sollte ein Frequenzzähler/Frequenzmesser benutzt werden, der den erfassten Wert über eine serielle Schnittstelle zu kiwi2Radio übertragen kann. Für ein authentisches Abschtimmgefühl sollte dabei die Grenze von 10 Messwerten pro Sekunde nicht unterschritten werden. Die Übertragung des Messwertes erfolgt an kiwi2Radio standardmäßig in 115200 Bit/s über '/dev/ttyUSB0'. Beide Parameter können jedoch über Aufrufparameter verändert werden. 
+Durch die Rückführung des Ausgabesignals eines irgendwo auf der Welt stehenden KiwiSDR - entsprechend der eingestellten Frequenz eines lokalen Radios - entsteht der Eindruck, als würde man mit dem heimischen Empfänger durch die Radiobänder entfernter Länder kurbeln. Die Rückführung des Signals kann dabei in NF-, ZF- oder HF-Lage für das lokale Radio erfolgen, je nach verwendeter Technik. Zur Erfassung der Lokaloszillatorfrequenz des Radios sollte ein Frequenzzähler/Frequenzmesser benutzt werden, der den erfassten Frequenzwert über eine serielle Schnittstelle zu kiwi2Radio übertragen kann. Für ein authentisches Abstimmgefühl sollte dabei die Grenze von 10 Messwerten pro Sekunde nicht unterschritten werden. Die Übertragung des Messwertes erfolgt an kiwi2Radio standardmäßig in 115200 Bit/s über '/dev/ttyUSB0'. Beide Parameter können über Aufrufparameter verändert werden. 
 
-Die Übertragung des Frequenzwertes erfolgt als Float-Wert mit dem Kommando FRX=Lo_Frequenz in einer Auflösung bis drei Nachkommastellen. In einer typischen Arduino-Anwendung kann dies also mit dem Befehl `Serial.println("FRX="+String(f));` erreicht werden.
+Die Übertragung des Frequenzwertes erfolgt als Float-Wert mit dem Kommando FRX=Lo_Frequenz in einer Auflösung bis drei Nachkommastellen. In einer typischen Arduino-Anwendung kann dies also schon mit dem Befehl `Serial.println("FRX="+String(f));` erreicht werden.
 
 
 ### Installation / Aufruf
@@ -13,7 +13,7 @@ Die Übertragung des Frequenzwertes erfolgt als Float-Wert mit dem Kommando FRX=
 Da kiwi2Radio in Python geschrieben ist, benötigt man auf dem ausführenden Rechner eine Python3-Umgebung (inklusive python3-tk und der Audiobibliothek portaudio).
 Zusätzlich werden die Python-Libs pyserial numpy scipy sounddevice pygame requests xmltodict justext benötigt. Diese Erweiterungen kann man zum Beispiel über das Kommando pip install nachrüsten (pip für Python muss dafür installiert sein).
 
-Nach dem Klonen sollten die Python-Scripte (sofern sie das nicht schon sind) im Ordner kiwi2Radio ausführbar gemacht werden.
+Nach dem Klonen sollten die Python-Scripte im Ordner kiwi2Radio ausführbar gemacht werden (sofern sie das nicht schon sind).
 
 `cd kiwi2Radio` 
 
