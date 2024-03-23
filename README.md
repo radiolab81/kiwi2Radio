@@ -9,4 +9,9 @@ pip install pyserial numpy scipy sounddevice pygame requests xmltodict justext
 
 
 
+![clientview](https://github.com/BM45/kiwi2Radio/blob/main/pics4www/clientview.jpg)
+
+
+![clientdbview](https://github.com/BM45/kiwi2Radio/blob/main/pics4www/clientdbview.jpg)
+
 
