@@ -18,6 +18,13 @@ Nach dem Klonen sollten die Python-Scripte (sofern sie das nicht schon sind) im 
 `chmod +x *.py`
 
 
+Die eigentliche Clientsoftware kiwi2Radio.py kann unterschiedlich aufgerufen werden:
+
+`./kiwi2Radio.py  --kiwiserver Serveradresse --kiwiport Port_des_KiwiSDR`
+
+Änderungen an der Schnittstelle für die Zuführung der Messergebnisse des Lokalsozillator werden durch die Parameter --serialdev=PORT und --serialbitrate=RATE gemacht.
+
+
 
 
 
