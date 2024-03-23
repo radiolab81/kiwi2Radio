@@ -32,7 +32,7 @@ Nach dem Start sieht man die Benutzeroberfläche des Empfängers.
 
 ![clientview](https://github.com/BM45/kiwi2Radio/blob/main/pics4www/clientview.jpg)
 
-Den aktuell gemessenen Frequenzwert des lokalen Radios sieht man numerisch im oberen Hauptbereich der Anwendung und grafisch durch dem Marker in der Spektrumsanzeige. Mit der Taste z kann zwischen laufender und zentrierter Anzeige des Markers gewechselt werden. Die Demodulationsart wird automatisch der aktuell eingestellten Frequenz angepasst, händische Übersteuerungen sind durch Tastendrücke möglich. Eine Übersicht gibt es im HELP-Menu. 
+Den aktuell gemessenen Frequenzwert des lokalen Radios sieht man numerisch im oberen Hauptbereich der Anwendung und grafisch durch den Marker in der Spektrumsanzeige. Mit der Taste z kann zwischen laufender und zentrierter Anzeige des Markers gewechselt werden. Die Demodulationsart wird automatisch der aktuell eingestellten Frequenz angepasst, händische Übersteuerungen sind durch Tastendrücke möglich. Eine Übersicht gibt es im HELP-Menu. 
 
 Man kann kiwi2Radio auch mit einer Liste von akutellen KiwiSDRs starten. Dazu muss zunächst mit
 
@@ -47,6 +47,8 @@ Danach kann kiwi2Radio einfach durch den Aufruf
 gestartet werden. Der zu verbindende Server wird im Anschluss ausgewählt.
 
 ![clientdbview](https://github.com/BM45/kiwi2Radio/blob/main/pics4www/clientdbview.jpg)
+
+Antwortet der Server positiv (freie Hörerplätze) wird danach in das Spektrum geschaltet.
 
 Über die Taste Q kann während des laufenden Betriebs auf andere weltweite Server umgeschaltet werden (sofern diese freie Plätze haben). Am lokalen Radio hat man damit die Möglichkeit für vergleichenden Empfang auf unterschiedlichen Erdteilen.
 
