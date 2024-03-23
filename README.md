@@ -23,14 +23,30 @@ Die eigentliche Clientsoftware kiwi2Radio.py kann unterschiedlich aufgerufen wer
 `./kiwi2Radio.py  --kiwiserver Serveradresse --kiwiport Port_des_KiwiSDR`
 
 Änderungen an der Schnittstelle für die Zuführung der Messergebnisse des Lokalsozillator werden durch die Parameter --serialdev=PORT und --serialbitrate=RATE gemacht.
+Informationen zu weiteren Parameter erfährt man mit dem Aufruf von `./kiwi2Radio.py --help`
 
 
-
-
+Nach dem Start sieht man die Benutzeroberfläche des Empfängers. 
 
 ![clientview](https://github.com/BM45/kiwi2Radio/blob/main/pics4www/clientview.jpg)
 
+Der aktuell gemessene Frequenzwert des lokalen Radios sieht man numerisch im oberen Hauptbereich und grafisch durch dem Marker in der Spektrumsanzeige. Mit der Taste z kann zwischen laufender und zentrierter Anzeige des Markers gewechselt werden. Die Demodulationsart wird automatisch der aktuell eingestellten Frequenz angepasst, händische Übersteuerungen sind durch Tastendrücke möglich. Eine Übersicht gibt es im HELP-Menu. 
+
+Man kann kiwi2Radio auch mit einer Liste von akutellen KiwiSDRs starten. Dazu muss zunächst mit
+
+`./kiwiinternetdb.py`
+
+eine aktualisiere Liste angelegt werden. 
+
+Danach kann kiwi2Radio einfach durch den Aufruf 
+
+`./kiwi2Radio.py` 
+
+gestartet werden. Der zu verbindende Server wird dann im Anschluss ausgewählt.
 
 ![clientdbview](https://github.com/BM45/kiwi2Radio/blob/main/pics4www/clientdbview.jpg)
+
+Über die Taste Q kann während des laufenden Betriebs auf andere weltweite Server umgeschaltet werden (sofern diese freie Plätze haben). Am lokalen Radio hat man damit die Möglichkeit für vergleichenden Empfang auf unterschiedlichen Erdteilen.
+
 
 
