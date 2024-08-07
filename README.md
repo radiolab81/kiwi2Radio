@@ -1,7 +1,7 @@
 # kiwi2Radio
-![sysoverview](https://github.com/BM45/kiwi2Radio/blob/main/pics4www/systemoverview.jpg)
+![sysoverview](https://github.com/radiolab81/kiwi2Radio/blob/main/pics4www/systemoverview.jpg)
 
-kiwi2Radio ist ein in Python geschriebener experimenteller HF-Mapper und KiwiSDR-Abstimmprogramm für alte Radios. Das Prinzip ist eine plattformunabhängige Abwandlung der inet2RF - Funktion aus den Projekten iRadio/iRadioMini und iRadioAndroid. https://github.com/BM45/iRadioAndroid#aussendung-des-internetradioprogramms-an-alte-radios
+kiwi2Radio ist ein in Python geschriebener experimenteller HF-Mapper und KiwiSDR-Abstimmprogramm für alte Radios. Das Prinzip ist eine plattformunabhängige Abwandlung der inet2RF - Funktion aus den Projekten iRadio/iRadioMini und iRadioAndroid. https://github.com/radiolab81/iRadioAndroid#aussendung-des-internetradioprogramms-an-alte-radios
 
 Durch die Rückführung des Ausgabesignals eines irgendwo auf der Welt stehenden KiwiSDR - entsprechend der eingestellten Frequenz eines lokalen Radios - entsteht der Eindruck, als würde man mit dem heimischen Empfänger durch die Radiobänder entfernter Länder kurbeln. Die Rückführung des Signals kann dabei in NF-, ZF- oder HF-Lage für das lokale Radio erfolgen, je nach verwendeter Technik. Zur Erfassung der Lokaloszillatorfrequenz des Radios sollte ein Frequenzzähler/Frequenzmesser benutzt werden, der den erfassten Frequenzwert über eine serielle Schnittstelle zu kiwi2Radio übertragen kann. Für ein authentisches Abstimmgefühl sollte dabei die Grenze von 10 Messwerten pro Sekunde nicht unterschritten werden. Die Übertragung des Messwertes erfolgt an kiwi2Radio standardmäßig in 115200 Bit/s über '/dev/ttyUSB0'. Beide Parameter können über Aufrufparameter verändert werden. 
 
@@ -30,7 +30,7 @@ Informationen zu weiteren Parametern erhält man mit dem Aufruf von `./kiwi2Radi
 
 Nach dem Start sieht man die Benutzeroberfläche des Empfängers. 
 
-![clientview](https://github.com/BM45/kiwi2Radio/blob/main/pics4www/clientview.jpg)
+![clientview](https://github.com/radiolab81/kiwi2Radio/blob/main/pics4www/clientview.jpg)
 
 Den aktuell gemessenen Frequenzwert des lokalen Radios sieht man numerisch im oberen Hauptbereich der Anwendung und grafisch durch den Marker in der Spektrumsanzeige. Mit der Taste z kann zwischen laufender und zentrierter Anzeige des Markers gewechselt werden. Die Demodulationsart wird automatisch der aktuell eingestellten Frequenz angepasst, händische Übersteuerungen sind durch Tastendrücke möglich. Eine Übersicht gibt es im HELP-Menu. 
 
@@ -46,7 +46,7 @@ Danach kann kiwi2Radio einfach durch den Aufruf
 
 gestartet werden. Der zu verbindende Server wird im Anschluss ausgewählt.
 
-![clientdbview](https://github.com/BM45/kiwi2Radio/blob/main/pics4www/clientdbview.jpg)
+![clientdbview](https://github.com/radiolab81/kiwi2Radio/blob/main/pics4www/clientdbview.jpg)
 
 Antwortet der Server positiv (freie Hörerplätze) wird danach in das Spektrum geschaltet.
 
