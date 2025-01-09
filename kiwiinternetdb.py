@@ -21,10 +21,9 @@ if response.status_code == 200:
 			passwd = ""
 			#print("passwd is:", passwd)
 			
-			desc = paragraph.text[0:paragraph.text.find("http://")]
+			desc = paragraph.text[paragraph.text.find("KiwiSDR"):]
 			#print("desc is:" , desc)
 			string_to_write = ""
 			string_to_write = host + ";" + port + ";" + passwd + ";" + desc + "\n";
 			fd.write(string_to_write);
 	fd.close()
-			
